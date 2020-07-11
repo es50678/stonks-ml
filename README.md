@@ -12,3 +12,12 @@ Run `docker-compose up` in the project directory
 - a `finnhub-python` distribution(from latest version)
 - sets the default starting command to `python bootstrapper.py`
   - this is what all new containers will run when starting, unless told otherwise
+
+## What is .python-version?
+this is used by pyenv to lock the projects python version to a specific python version
+- in this case stonks_ml is a virtual environment installed via `pyenv virtualenv 3.8.3 stonks_ml`
+-- `pyenv virtualenv 3.8.3 stonks_ml` should be ran locally to ensure python versions are the same accross machines
+
+## What is requirements.txt?
+the equivalent of a package-json or gemfile - pip can use this to install dependencies
+- pip install -r requirements.txt
